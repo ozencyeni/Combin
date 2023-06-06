@@ -16,35 +16,9 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            HStack{
-                ZStack {
-                    HStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(width: bounds.width * 0.7, height: bounds.height * 0.05)
-                        .foregroundColor(Color("homeScreenSearchBarBackground"))
-                        .padding(.horizontal)
-                        Spacer()
-                    }
-                    HStack {
-                        Spacer()
-                        TextField("Stilist veya marka adı yazınız", text: $search)
-                            .frame(width: bounds.width * 0.65, height: bounds.height * 0.05)
-                        Image(systemName: "magnifyingglass").font(.system(size: 25))
-                            .offset(x: -40)
-                            .foregroundColor(Color("homeScreenSearchBarTools"))
-
-                    }
-                }.padding(.vertical)
-                HStack {
-                    Image(systemName: "message").font(.system(size: 25))
-                        .foregroundColor(Color("homeScreenSearchBarTools"))
-                    Image(systemName: "bell").font(.system(size: 25))
-                        .foregroundColor(Color("homeScreenSearchBarTools"))
-                    Spacer()
-                }
+            SearchBarView(search: search)
                 
-                
-            } //Search bar view
+                //Search bar view
             VStack {
                 HStack {
                     Text("Vitrin")
@@ -93,12 +67,15 @@ struct HomeView: View {
                 }
             } // Kombin and Hepsini Gör
             HStack {
-                ScrollView {
+                ScrollView(.horizontal) {
                     HStack {
                         ForEach(1..<9) { data in
-                            BottomRoundedRectangleViews()
+                            VStack {
+                                BottomRoundedRectangleViews()
+                                BottomRoundedRectangleViews()
+                            }
                         }
-                    }
+                    }.padding(.horizontal)
                 }
             }
             Spacer()
@@ -122,8 +99,26 @@ struct HepsiniGörView: View{
 struct BottomRoundedRectangleViews: View{
     let bounds = UIScreen.main.bounds
     var body: some View{
-        RoundedRectangle(cornerRadius: 10)
-            .frame(width: bounds.width * 0.4, height: bounds.height * 0.2)
-            .foregroundColor(Color("homeScreenRectangles"))
+        HStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: bounds.width * 0.44, height: bounds.height * 0.13)
+                .foregroundColor(Color("homeScreenRectangles"))
+                VStack {
+                    Spacer()
+                    Spacer()
+                    HStack {
+                        Circle()
+                            .frame(width: 30)
+                        Text("Duygu Karataş")
+                            .font(.system(size: 15))
+                    }
+                    Text("Tarafından Düzenlendi")
+                        .font(.system(size: 10))
+                        .foregroundColor(.gray)
+                    Spacer()
+                }
+            }
+        }
     }
 }

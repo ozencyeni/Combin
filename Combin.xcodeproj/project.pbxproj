@@ -24,6 +24,14 @@
 		CA8671542A2FDE8300CBB752 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671532A2FDE8300CBB752 /* TabViews.swift */; };
 		CA8671562A2FDEED00CBB752 /* ShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671552A2FDEED00CBB752 /* ShowcaseView.swift */; };
 		CA8671582A2FDF1500CBB752 /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671572A2FDF1500CBB752 /* CombineView.swift */; };
+		CA86715A2A2FE9A800CBB752 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671592A2FE9A800CBB752 /* SearchBarView.swift */; };
+		CA86715D2A2FEBCA00CBB752 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86715C2A2FEBCA00CBB752 /* UserInformationView.swift */; };
+		CA86715F2A2FEBEC00CBB752 /* CupboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86715E2A2FEBEC00CBB752 /* CupboardView.swift */; };
+		CA8671612A2FEC0100CBB752 /* BodySizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671602A2FEC0100CBB752 /* BodySizeView.swift */; };
+		CA8671632A2FEC0C00CBB752 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671622A2FEC0C00CBB752 /* SettingsView.swift */; };
+		CA8671652A2FF8E500CBB752 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671642A2FF8E500CBB752 /* TopView.swift */; };
+		CA8671692A3007F300CBB752 /* MostFavoritesStylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8671682A3007F300CBB752 /* MostFavoritesStylistsView.swift */; };
+		CA86716C2A300A4F00CBB752 /* NavigationBackBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86716B2A300A4F00CBB752 /* NavigationBackBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +53,14 @@
 		CA8671532A2FDE8300CBB752 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		CA8671552A2FDEED00CBB752 /* ShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseView.swift; sourceTree = "<group>"; };
 		CA8671572A2FDF1500CBB752 /* CombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineView.swift; sourceTree = "<group>"; };
+		CA8671592A2FE9A800CBB752 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		CA86715C2A2FEBCA00CBB752 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
+		CA86715E2A2FEBEC00CBB752 /* CupboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupboardView.swift; sourceTree = "<group>"; };
+		CA8671602A2FEC0100CBB752 /* BodySizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySizeView.swift; sourceTree = "<group>"; };
+		CA8671622A2FEC0C00CBB752 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CA8671642A2FF8E500CBB752 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		CA8671682A3007F300CBB752 /* MostFavoritesStylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostFavoritesStylistsView.swift; sourceTree = "<group>"; };
+		CA86716B2A300A4F00CBB752 /* NavigationBackBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,13 +93,14 @@
 		CA8671222A2FDA6C00CBB752 /* Combin */ = {
 			isa = PBXGroup;
 			children = (
+				CA86716A2A300A3E00CBB752 /* Components */,
+				CA8671322A2FDACF00CBB752 /* LoginViews */,
 				CA8671312A2FDA8700CBB752 /* CombineView */,
 				CA8671382A2FDB1F00CBB752 /* VitrinView */,
 				CA8671372A2FDB1900CBB752 /* TabView */,
 				CA8671362A2FDAF000CBB752 /* TabBar */,
 				CA8671352A2FDAE900CBB752 /* StartedView */,
 				CA8671342A2FDADE00CBB752 /* SignUpView */,
-				CA8671322A2FDACF00CBB752 /* LoginViews */,
 				CA8671232A2FDA6C00CBB752 /* CombinApp.swift */,
 				CA8671272A2FDA6D00CBB752 /* Assets.xcassets */,
 				CA8671292A2FDA6D00CBB752 /* Preview Content */,
@@ -138,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				CA8671472A2FDDD700CBB752 /* TabBar.swift */,
+				CA8671532A2FDE8300CBB752 /* TabViews.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -145,11 +163,11 @@
 		CA8671372A2FDB1900CBB752 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
-				CA8671492A2FDE4600CBB752 /* ExploreView.swift */,
+				CA8671672A3007D100CBB752 /* ExploreView */,
+				CA86715B2A2FEBAD00CBB752 /* ProfileView */,
 				CA86714B2A2FDE4D00CBB752 /* HomeView.swift */,
-				CA86714F2A2FDE6E00CBB752 /* ProfileView.swift */,
 				CA8671512A2FDE7C00CBB752 /* StylistView.swift */,
-				CA8671532A2FDE8300CBB752 /* TabViews.swift */,
+				CA8671592A2FE9A800CBB752 /* SearchBarView.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -160,6 +178,44 @@
 				CA8671552A2FDEED00CBB752 /* ShowcaseView.swift */,
 			);
 			path = VitrinView;
+			sourceTree = "<group>";
+		};
+		CA86715B2A2FEBAD00CBB752 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				CA8671662A2FF97200CBB752 /* Components */,
+				CA86714F2A2FDE6E00CBB752 /* ProfileView.swift */,
+				CA86715C2A2FEBCA00CBB752 /* UserInformationView.swift */,
+				CA86715E2A2FEBEC00CBB752 /* CupboardView.swift */,
+				CA8671602A2FEC0100CBB752 /* BodySizeView.swift */,
+				CA8671622A2FEC0C00CBB752 /* SettingsView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		CA8671662A2FF97200CBB752 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA8671642A2FF8E500CBB752 /* TopView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CA8671672A3007D100CBB752 /* ExploreView */ = {
+			isa = PBXGroup;
+			children = (
+				CA8671492A2FDE4600CBB752 /* ExploreView.swift */,
+				CA8671682A3007F300CBB752 /* MostFavoritesStylistsView.swift */,
+			);
+			path = ExploreView;
+			sourceTree = "<group>";
+		};
+		CA86716A2A300A3E00CBB752 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA86716B2A300A4F00CBB752 /* NavigationBackBarButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,15 +291,23 @@
 				CA8671482A2FDDD700CBB752 /* TabBar.swift in Sources */,
 				CA86713C2A2FDB4100CBB752 /* LoginView.swift in Sources */,
 				CA8671562A2FDEED00CBB752 /* ShowcaseView.swift in Sources */,
+				CA86715D2A2FEBCA00CBB752 /* UserInformationView.swift in Sources */,
+				CA8671692A3007F300CBB752 /* MostFavoritesStylistsView.swift in Sources */,
 				CA8671582A2FDF1500CBB752 /* CombineView.swift in Sources */,
+				CA8671632A2FEC0C00CBB752 /* SettingsView.swift in Sources */,
+				CA86715A2A2FE9A800CBB752 /* SearchBarView.swift in Sources */,
+				CA8671652A2FF8E500CBB752 /* TopView.swift in Sources */,
+				CA86716C2A300A4F00CBB752 /* NavigationBackBarButton.swift in Sources */,
 				CA8671422A2FDBD000CBB752 /* FacebookSignView.swift in Sources */,
 				CA8671502A2FDE6E00CBB752 /* ProfileView.swift in Sources */,
 				CA86714A2A2FDE4600CBB752 /* ExploreView.swift in Sources */,
 				CA86714C2A2FDE4D00CBB752 /* HomeView.swift in Sources */,
 				CA8671522A2FDE7C00CBB752 /* StylistView.swift in Sources */,
+				CA8671612A2FEC0100CBB752 /* BodySizeView.swift in Sources */,
 				CA8671442A2FDBD600CBB752 /* SignUpView.swift in Sources */,
 				CA8671242A2FDA6C00CBB752 /* CombinApp.swift in Sources */,
 				CA8671402A2FDBC500CBB752 /* GoogleSignView.swift in Sources */,
+				CA86715F2A2FEBEC00CBB752 /* CupboardView.swift in Sources */,
 				CA8671462A2FDD7700CBB752 /* StartedView.swift in Sources */,
 				CA8671542A2FDE8300CBB752 /* TabViews.swift in Sources */,
 				CA86713E2A2FDBA400CBB752 /* AppleSignView.swift in Sources */,

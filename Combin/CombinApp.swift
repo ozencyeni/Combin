@@ -11,7 +11,7 @@ import SwiftUI
 struct CombinApp: App {
     var body: some Scene {
         WindowGroup {
-            StartedView()
+            StartedView().preferredColorScheme(.light)
         }
     }
 }

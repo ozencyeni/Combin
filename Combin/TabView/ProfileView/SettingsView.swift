@@ -1,5 +1,5 @@
 //
-//  StylistView.swift
+//  SettingsView.swift
 //  Combin
 //
 //  Created by Özenç Yeni on 7.06.2023.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct StylistView: View {
+struct SettingsView: View {
     var body: some View {
         VStack {
-            SearchBarView()
+            TopView(title: "Ayarlar")
             Spacer()
         }
     }
 }
 
-struct StylistView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        StylistView()
+        SettingsView()
     }
 }
